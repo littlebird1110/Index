@@ -13,13 +13,13 @@
 
 <script>
 function checkAnswer() {
-    const correctAnswer = "benedict"; 
+    const correctAnswers = ["elizabeth"; "caroline"; "charles"; "benedict"; "cain"; "all of them"; "all"];
     const userResponse = document.getElementById("userInput").value.trim().toLowerCase();
     const feedback = document.getElementById("feedback");
     const gif = document.getElementById("successGif");
 
     if (userResponse === correctAnswer) {
-        feedback.innerHTML = "Correct! <b>Benedict</b> murdered Able LeDomas";
+        feedback.innerHTML = "Congratulations, <b>you</b> solved the murdered of Able LeDomas";
         feedback.style.color = "#481F1D";
         gif.style.display = "block";
 
