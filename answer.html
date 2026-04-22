@@ -1,27 +1,42 @@
 <html>
+<body>
+
+<div id="question-container">
+<p>Who murdered Able LeDomas?</p>
+
+<input type="text" id="userInput" placeholder="Type your answer here...">
+<button onclick="checkAnswer()">Submit<button>
+<p id=successGif"
+<img id="feedback"></p>
+scr="images/something.jpg"
+style="display:none; width: 200px; margin-top: 10px;">
+</div>
+
 <script>
 function checkAnswer() {
-    const correctAnswers = ["elizabeth", "caroline", "charles", "benedict", "cain", "all of them", "all"];
-    const userResponse = document.getElementById("userInput").value.trim().toLowerCase();
-    const feedback = document.getElementById("feedback");
-    const gif = document.getElementById("successGif");
+const correctAnswer = "Benedict";
+const userResponse = document.getElementById("userInput").value.trim().toLowerCase();
+const feedback = document.getElementById("feedback");
+const gif = document.getElementById("successGif");
 
-    if (correctAnswers.includes(userResponse)) {
-        feedback.innerHTML = "Congratulations, <b>you</b> solved the murder of Able LeDomas";
-        feedback.style.color = "#481F1D";
-        gif.style.display = "block";
+if (userResponse === correctAnswer) {
+feedback.innerHTML = "Yes, <b>Benedict</b> murdered Able LeDomas";
+feedback.style.color = "#3D532E";
 
-        setTimeout(() => {
-            gif.style.display = "none";
-        }, 3000);
+gif.style.display = "block";
 
-    } else {
-        feedback.innerHTML = "Incorrect. Please Try Again";
-        feedback.style.color = "#481F1D";
-        gif.style.display = "none";
-    }
+setTimeout(() => {
+gif.style.disply = "none";
+}, 3000);
+
+} else {
+feedback.inner.HTML = "Incorrect. Please Try Again";
+feedback.style.color = "#632222";
+gif.style.display = "none";
+}
 }
 </script>
+</body>
 <a href="index.html" class="button-link">Home</a>
 <style> 
  .button-link {
