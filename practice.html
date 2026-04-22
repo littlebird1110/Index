@@ -18,13 +18,13 @@
             overflow: hidden;
         }
 
-        /* 2. THE GAME WRAPPER: This stays fixed even when resizing */
+        /* Container that lets it be OK upon any resize. */
         #game-container {
             position: relative;
             width: 100vw;
-            height: 56.25vw; /* This maintains a 16:9 ratio (9/16 = 0.5625) */
+            height: 56.25vw; /* Aspect Ratio... */
             max-height: 100vh;
-            max-width: 177.78vh; /* (16/9 = 1.77) */
+            max-width: 177.78vh; /* More aspect ratio... */
             background-image: url('images/Home_Screen.jpg');
             background-size: 100% 100%;
             background-repeat: no-repeat;
@@ -41,7 +41,7 @@
             z-index: 10;
         }
 
-        /* Decorative Effects - Added pointer-events: none */
+        /* Rain/Fire/Video CSS */
         #rain-effect {
             position: absolute;
             width: 30%; /* Using % keeps it scaled with the game */
@@ -61,12 +61,12 @@
 
         #water-video {
             position: absolute;
-            top: 20px;
-            left: 90px;
+            top: 40px;
+            right: 15px;
             z-index: 5;
         }
 
-        /* 4. Clue Positions (Using % ensures they never drift) */
+        /* Clue Positions */
         #clue-police-file { top: 86%; left: 48%; width: 5%; height: 8%; }
         #clue-signet-ring { top: 85%; left: 83%; width: 2%; height: 3%; }
         #clue-photo       { top: 40%; left: 34%; width: 5%; height: 4%; }
@@ -122,7 +122,7 @@
     <script>
         function showClue(message) {
             alert("You found: " + message);
-            // Start audio on first clue click to bypass browser blocks
+            // Audio bypass
             document.getElementById('bg-music').play();
         }
     </script>
