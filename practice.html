@@ -27,3 +27,192 @@
             background-position: center;
             overflow: hidden;
         }
+  /* The transparent "Hotspot" */
+  .hotspot {
+    position: absolute;
+    cursor: pointer;
+    /* Use background: rgba(255, 0, 0, 0.3); to see them while testing!, transparent when ready */
+    background: rgba(255,0,0,0.3); 
+  }
+
+  /* Position each clue area specifically */
+  #clue-police-file {
+    top: 86%;
+    left: 48%;
+    width: 5%;
+    height: 8%;
+  }
+
+  #clue-signet-ring {
+    top: 85%;
+    left: 83%;
+    width: 2%;
+    height: 3%;
+  }
+    
+    #clue-photo {
+      top: 40%;
+      left: 34%;
+      width: 5%;
+      height: 4%;
+    }
+
+    #clue-the-will1 {
+      top: 81%;
+      left: 34%;
+      width: 3%;
+      height: 3%;
+    }
+
+    #clue-the-will2 {
+      top: 80%;
+      left: 6%;
+      width: 6%;
+      height: 5%;
+    }
+
+     #clue-the-will3 {
+      top: 84%;
+      left: 38%;
+      width: 5%;
+      height: 8%;
+    }
+
+     #clue-glasses {
+      top: 86%;
+      left: 58%;
+      width: 7%;
+      height: 5%;
+    }
+
+    #clue-muddy-print {
+      top: 60%;
+      left: 7%;
+      width: 4%;
+      height: 5%;
+    }
+
+    #clue-bloody-print {
+      top: 90%;
+      left: 18%;
+      width: 3%;
+      height: 8%;
+    }
+
+    #clue-checks {
+      top: 82%;
+      left: 54%;
+      width: 3%;
+      height: 3%;
+    }
+
+    #clue-letter {
+      top: 41%;
+      left: 51%;
+      width: 3%;
+      height: 3%;
+    }
+
+    #clue-open-window {
+      top: 23%;
+      left: 2%;
+      width: 17%;
+      height: 36%;
+    }
+
+    #clue-orange-knife {
+      top: 29%;
+      left: 94%;
+      width: 5%;
+      height: 4%;
+    } 
+
+     #clue-yellow-knife {
+      top: 8%;
+      left: 76%;
+      width: 5%;
+      height: 4%;
+    } 
+
+     #clue-green-knife {
+      top: 40%;
+      left: 67%;
+      width: 5%;
+      height: 4%;
+    } 
+
+     #clue-blue-knife {
+      top: 16%;
+      left: 14%;
+      width: 5%;
+      height: 4%;
+    } 
+
+     #clue-purple-knife {
+      top: 6%;
+      left: 13%;
+      width: 5%;
+      height: 4%;
+    } 
+</style>
+</head>
+
+<div id="art-canvas">
+  <!-- Invisible clickable areas -->
+  <div id="clue-police-file" class="hotspot" onclick="showClue('police file')"></div>
+  <div id="clue-signet-ring" class="hotspot" onclick="showClue('signet ring')"></div>
+  <div id="clue-photo" class="hotspot" onclick="showClue('photo')"></div>
+  <div id="clue-the-will1" class="hotspot" onclick="showClue('will 1')"></div>
+  <div id="clue-the-will2" class="hotspot" onclick="showClue('will 2')"></div>
+  <div id="clue-the-will3" class="hotspot" onclick="showClue('will 3')"></div>
+  <div id="clue-glasses" class="hotspot" onclick="showClue('glasses')"></div>
+  <div id="clue-muddy-print" class="hotspot" onclick="showClue('muddy print')"></div>
+  <div id="clue-bloody-print" class="hotspot" onclick="showClue('bloody print')"></div>
+  <div id="clue-checks" class="hotspot" onclick="showClue('checks')"></div>
+  <div id="clue-letter" class="hotspot" onclick="showClue('letter')"></div>
+  <div id="clue-open-window" class="hotspot" onclick="showClue('open window')"></div>
+  <div id="clue-orange-knife" class="hotspot" onclick="showClue('orange knife')"></div>
+  <div id="clue-yellow-knife" class="hotspot" onclick="showClue('yellow knife')"></div>
+  <div id="clue-green-knife" class="hotspot" onclick="showClue('green knife')"></div>
+  <div id="clue-blue-knife" class="hotspot" onclick="showClue('blue knife')"></div>
+  <div id="clue-purple-knife" class="hotspot" onclick="showClue('purple knife')"></div>
+</div>
+
+<script>
+  function showClue(message) {
+    alert(message);
+  }
+</script>
+  <audio autoplay loop>
+    <source src="images/sound2.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+ <img src="images/rain.gif" alt="lightning">
+ <style>
+  #rain.gif {
+  position: absolute;
+  box-sizing: border-box;
+  width: 420;
+  top: 110;
+  left: 10;
+  }
+ </style>
+  <img src="images/fire.gif" alt="fire">
+ <style>
+  #fire.gif {
+   position: absolute;
+   top: 80px;
+   left: 50px;
+  }
+ </style>
+<video width="260" height="110" controls>
+  <source src="images/Water_2.mp4a" type="video/mp4a">
+</video>
+ <style>
+  #Water_2.mp4a {
+   position: absolute;
+   top: 20px;
+   left: 90px;
+  }
+ </style>
+</html>
