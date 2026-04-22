@@ -176,30 +176,31 @@
     <source src="images/sound2.m4a" type="audio/mp4">
     Your browser does not support the audio element.
   </audio>
- <img src="images/rain.gif" width="400" height="450" alt="lightning">
+ <img src="images/rain.gif" id="rain" width="400" height="450" alt="lightning">
  <style>
-  #rain.gif {
-  position: absolute;
+  #rain {
+  position: relative;
   box-sizing: border-box;
   top: 50px;
   left: 10px;
   width: 420px;
   }
  </style>
-  <img src="images/fire.gif" alt="fire">
+  <img src="images/fire.gif" id="fire" alt="fire">
  <style>
-  #fire.gif {
-   position: absolute;
+  #fire {
+   position: relative;
    top: 80px;
    left: 50px;
+   width: 420
   }
  </style>
-<video width="260" height="110" controls>
+<video id="water" width="260" height="110" controls>
   <source src="images/Water_2.mp4a" type="video/mp4a">
 </video>
  <style>
-  #Water_2.mp4a {
-   position: absolute;
+  #water {
+   position: relative;
    top: 20px;
    left: 90px;
   }
